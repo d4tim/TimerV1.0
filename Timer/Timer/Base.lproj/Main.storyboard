@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Work OUT-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hdD-sX-WCv" secondAttribute="trailing" constant="20" id="fIv-MW-xhb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OB5-j3-i5C"/>
+                    <navigationItem key="navigationItem" title="Work OUT" id="OB5-j3-i5C"/>
                     <connections>
                         <outlet property="labelWorkOut" destination="bS3-jf-HGy" id="QKu-EP-KI2"/>
                     </connections>

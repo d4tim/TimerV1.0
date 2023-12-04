@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         alertController.addTextField(configurationHandler: timeforExerTextField)
         alertController.addTextField(configurationHandler: timeForRestTextField)
         
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: self.okHandler)
+        let okAction = UIAlertAction(title: "add", style: .default, handler: self.okHandler)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         
@@ -56,9 +56,19 @@ class ViewController: UIViewController {
     }
     
     func okHandler(alert: UIAlertAction!){
-        let settingVC = SettingsViewController()
-        settingVC.customInit(exerName: (exerNameTextField?.text)!, timeforExer: (timeforExerTextField?.text)!, timeForRest: (timeForRestTextField?.text)!)
-        self.navigationController?.pushViewController(settingVC, animated: true)
+        let workOut = WorkOutViewController()
+        
+        
+        
+        
+//        let settingVC = SettingsViewController()
+//        settingVC.customInit(exerName: (exerNameTextField?.text)!, timeforExer: (timeforExerTextField?.text)!, timeForRest: (timeForRestTextField?.text)!)
+        
+        workOut.customInit(exerName: (exerNameTextField?.text)!, timeforExer: (timeforExerTextField?.text)!, timeForRest: (timeForRestTextField?.text)!)
+        
+        self.navigationController?.pushViewController(workOut, animated: true)
+        
+        
     }
     
 }

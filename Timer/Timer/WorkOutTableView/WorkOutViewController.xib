@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkOutViewController" customModule="Timer" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="5T5-1F-V6r" id="o5A-if-q1Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="146" translatesAutoresizingMaskIntoConstraints="NO" id="Aqa-b4-u74">
+                    <rect key="frame" x="20" y="79" width="353" height="103.66666666666669"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lil-5B-uVD">
+                            <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="103.66666666666667"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                            <connections>
+                                <action selector="onStart:" destination="-1" eventType="touchUpInside" id="O3U-xw-mlR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYL-fF-UJa">
+                            <rect key="frame" x="249.66666666666671" y="0.0" width="103.33333333333334" height="103.66666666666667"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gYL-fF-UJa" secondAttribute="height" multiplier="1:1" id="yaw-Qq-9uv"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Add more"/>
+                            <connections>
+                                <action selector="addMore:" destination="-1" eventType="touchUpInside" id="8Kg-dh-pbn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5T5-1F-V6r">
+                    <rect key="frame" x="0.0" y="213.66666666666669" width="393" height="604.33333333333326"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray3Color"/>
+            <constraints>
+                <constraint firstItem="5T5-1F-V6r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="80X-hR-1y5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Aqa-b4-u74" secondAttribute="trailing" constant="20" id="Bgd-eI-q0V"/>
+                <constraint firstItem="5T5-1F-V6r" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Id5-UJ-Zfg"/>
+                <constraint firstItem="5T5-1F-V6r" firstAttribute="top" secondItem="Aqa-b4-u74" secondAttribute="bottom" constant="31.329999999999998" id="Xax-Ff-75S"/>
+                <constraint firstItem="Aqa-b4-u74" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="aye-fe-Fed"/>
+                <constraint firstItem="5T5-1F-V6r" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="c8T-bm-NJ7"/>
+                <constraint firstItem="Aqa-b4-u74" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fGJ-JG-fKS"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

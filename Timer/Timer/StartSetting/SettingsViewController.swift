@@ -29,12 +29,6 @@ class SettingsViewController: UIViewController {
     }
     
     
-    @IBAction func isAddButton(_ sender: Any) {
-    }
-    
-    @IBAction func isCancelButton(_ sender: Any) {
-    }
-    
     func customInit(exerName: String, timeforExer: String, timeForRest: String){
         self.exerName = exerName
         self.timeforExer = timeforExer
